@@ -1,9 +1,80 @@
+<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <title>Building blocks demo</title>
+  <!-- Building blocks -->
+  <link rel="stylesheet" href="build-blocks/headers.css">
+  <link rel="stylesheet" href="build-blocks/drawer.css">
+
+  <!-- Transitions -->
+  <link rel="stylesheet" href="build-blocks/transitions.css">
+
+  <!-- Util CSS: some extra tricks -->
+  <link rel="stylesheet" href="build-blocks/util.css">
+
+  <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-<h2 id="algebra-basics">Basics</h2>
-<h2 id="trigonometry-basics">Basics</h2>
+  <section id="index" data-position="current">
+    <section data-type="sidebar">
+      <header>
+        <menu type="toolbar">
+          <a href="#">Done</a>
+        </menu>
+        <h1>Drawer demo</h1>
+      </header>
+      <nav>
+        <h2>Algebra</h3>
+        <ul>
+          <li><a href="#algebra-basics">Basics</a></li>
+          <li><a href="#algebra-exponents">Laws of Exponents</a></li>
+          <li><a href="#algebra-quadratic">Quadratic Formula</a></li>
+          <li><a href="#algebra-polynomials">Polynomials</a></li>
+          <li><a href="#algebra-zero">Rules of Zero</a></li>
+        </ul>
+        <h2>Trigonometry</h3>
+        <ul>
+          <li><a href="#trigonometry-basics">Basics</a></li>
+          <li><a href="#trigonometry-addition">Addition Formulas</a></li>
+          <li><a href="#trigonometry-half">Half Angle</a></li>
+          <li><a href="#trigonometry-double">Double Angle</a></li>
+          <li><a href="#trigonometry-sines">Law of Sines</a></li>
+          <li><a href="#trigonometry-cosines">Law of Cosines</a></li>
+        </ul>
+        <h2>Calculus</h3>
+        <ul>
+          <li><a href="#calculus-derivatives">Derivatives Table</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section id="drawer" role="region">
+      <header class="fixed">
+        <a href="#"><span class="icon icon-menu">hide sidebar</span></a>
+        <a href="#drawer"><span class="icon icon-menu">show sidebar</span></a>
+        <h1>Math Cheat Sheet</em></h1>
+      </header>
+      <article class="scrollable header">
+        <h2>Algebra</h3>
+        <h3 id="algebra-basics">Basics</h3>
+        <h3 id="algebra-exponents">Laws of Exponents</h3>
+        <h3 id="algebra-quadratic">Quadratic Formula</h3>
+        <h3 id="algebra-polynomials">Polynomials</h3>
+        <h3 id="algebra-zero">Rules of Zero</h3>
+        <h2>Trigonometry</h3>
+        <h3 id="trigonometry-basics">Basics</h3>
+        <h3 id="trigonometry-addition">Addition Formulas</h3>
+        <h3 id="trigonometry-half">Half Angle</h3>
+        <h3 id="trigonometry-double">Double Angle</h3>
+        <h3 id="trigonometry-sines">Law of Sines</h3>
+        <h3 id="trigonometry-cosines">Law of Cosines</h3>
+        <h2>Calculus</h3>
+        <h3 id="calculus-derivatives">Derivatives Table</h3>
+      </article>
+    </section> <!-- end drawer -->
+  </section> <!-- end index -->
+
 </body>
 </html>
