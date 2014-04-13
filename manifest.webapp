@@ -12,6 +12,10 @@
     "en-US": {
       "name": "Math Cheat Sheet",
       "description": "Math Cheat Sheet using MathML"
+    },
+    "pt": {
+      "name": "Tabela de Equações Matemáticas",
+      "description": "Tabela de Equações Matemáticas utilizando MathML"
     }
   },
   "default_locale": "en-US",

@@ -14,7 +14,12 @@
   <!-- Util CSS: some extra tricks -->
   <link rel="stylesheet" href="build-blocks/util.css">
 
+  <!-- App CSS -->
   <link rel="stylesheet" href="css/app.css">
+
+  <!-- Localization stuff -->
+  <link rel="resource" type="application/l10n" href="locales/locales.ini">
+  <script type='text/javascript' src="b2g-shared/l10n.js"></script>
 </head>
 <body>
   <section id="index" data-position="current">
@@ -23,7 +28,7 @@
         <menu type="toolbar">
           <a href="#">Done</a>
         </menu>
-        <h1>Drawer demo</h1>
+        <h1 data-l10n-id="toc">ToC</h1>
       </header>
       <nav>
         <h2>Algebra</h3>
@@ -54,7 +59,7 @@
       <header class="fixed">
         <a href="#"><span class="icon icon-menu">hide sidebar</span></a>
         <a href="#drawer"><span class="icon icon-menu">show sidebar</span></a>
-        <h1>Math Cheat Sheet</em></h1>
+        <h1 data-l10n-id="name">Math Cheat Sheet</h1>
       </header>
       <article class="scrollable header">
         <h2>Algebra</h3>
