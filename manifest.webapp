@@ -1,30 +1,30 @@
 {
-  "name": "Math Cheat Sheet",
-  "description": "Math Cheat Sheet using MathML",
-  "type": "web",
-  "launch_path": "/index.html",
-  "developer": {
-    "name": "Raniere Silva",
-    "url": "https://github.com/r-gaia-cs/math-cheat-sheet"
-  },
-  "permissions": {},
-  "locales": {
-    "en-US": {
-      "name": "Math Cheat Sheet",
-      "description": "Math Cheat Sheet using MathML"
+    "name": "Math Cheat Sheet",
+    "description": "Math Cheat Sheet using MathML",
+    "type": "web",
+    "launch_path": "/index.html",
+    "developer": {
+        "name": "Raniere Silva",
+        "url": "https://github.com/r-gaia-cs/math-cheat-sheet"
     },
-    "pt": {
-      "name": "Tabela de Equações Matemáticas",
-      "description": "Tabela de Equações Matemáticas utilizando MathML"
+    "permissions": {},
+    "locales": {
+        "en-US": {
+            "name": "Math Cheat Sheet",
+            "description": "Math Cheat Sheet using MathML"
+        },
+        "pt": {
+            "name": "Tabela de Equações Matemáticas",
+            "description": "Tabela de Equações Matemáticas utilizando MathML"
+        }
+    },
+    "default_locale": "en-US",
+    "icons": {
+        "32": "icons/math-cheat-sheet-32.png",
+        "60": "icons/math-cheat-sheet-60.png",
+        "90": "icons/math-cheat-sheet-90.png",
+        "120": "icons/math-cheat-sheet-120.png",
+        "128": "icons/math-cheat-sheet-128.png",
+        "256": "icons/math-cheat-sheet-256.png"
     }
-  },
-  "default_locale": "en-US",
-  "icons": {
-    "32": "icons/math-cheat-sheet-32.png",
-    "60": "icons/math-cheat-sheet-60.png",
-    "90": "icons/math-cheat-sheet-90.png",
-    "120": "icons/math-cheat-sheet-120.png",
-    "128": "icons/math-cheat-sheet-128.png",
-    "256": "icons/math-cheat-sheet-256.png"
-  }
 }

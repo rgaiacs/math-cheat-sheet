@@ -1,61 +1,77 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no" />
-  <title>Building blocks demo</title>
-  <!-- Building blocks -->
-  <link rel="stylesheet" href="build-blocks/headers.css">
-  <link rel="stylesheet" href="build-blocks/drawer.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>Building blocks demo</title>
+    <!-- Building blocks -->
+    <link rel="stylesheet" href="build-blocks/headers.css">
+    <link rel="stylesheet" href="build-blocks/drawer.css">
 
-  <!-- Transitions -->
-  <link rel="stylesheet" href="build-blocks/transitions.css">
+    <!-- Transitions -->
+    <link rel="stylesheet" href="build-blocks/transitions.css">
 
-  <!-- Util CSS: some extra tricks -->
-  <link rel="stylesheet" href="build-blocks/util.css">
+    <!-- Util CSS: some extra tricks -->
+    <link rel="stylesheet" href="build-blocks/util.css">
 
-  <!-- App CSS -->
-  <link rel="stylesheet" href="css/app.css">
+    <!-- App CSS -->
+    <link rel="stylesheet" href="css/app.css">
 
-  <!-- Localization stuff -->
-  <link rel="resource" type="application/l10n" href="locales/locales.ini">
-  <script type='text/javascript' src="b2g-shared/l10n.js"></script>
+    <!-- Localization stuff -->
+    <link rel="resource" type="application/l10n" href="locales/locales.ini">
+    <script type='text/javascript' src="b2g-shared/l10n.js"></script>
 </head>
+
 <body>
-  <section id="index" data-position="current">
-    <section data-type="sidebar">
-      <header>
-        <menu type="toolbar">
-          <a href="#">Done</a>
-        </menu>
-        <h1 data-l10n-id="toc">ToC</h1>
-      </header>
-      <nav>
-        <h2>Algebra</h2>
-        <ul>
-          <li><a href="#algebra-basics">Basics</a></li>
-          <li><a href="#algebra-exponents">Laws of Exponents</a></li>
-          <li><a href="#algebra-quadratic">Quadratic Formula</a></li>
-          <li><a href="#algebra-polynomials">Polynomials</a></li>
-          <li><a href="#algebra-zero">Rules of Zero</a></li>
-        </ul>
-        <h2>Trigonometry</h2>
-        <ul>
-          <li><a href="#trigonometry-basics">Basics</a></li>
-          <li><a href="#trigonometry-addition">Addition Formulas</a></li>
-          <li><a href="#trigonometry-half">Half Angle</a></li>
-          <li><a href="#trigonometry-double">Double Angle</a></li>
-          <li><a href="#trigonometry-sines">Law of Sines</a></li>
-          <li><a href="#trigonometry-cosines">Law of Cosines</a></li>
-        </ul>
-        <h2>Calculus</h2>
-        <ul>
-          <li><a href="#calculus-derivatives">Derivatives</a></li>
-          <li><a href="#calculus-special-derivatives">Special Derivatives</a></li>
-          <li><a href="#calculus-integrals">Integrals</a></li>
-        </ul>
-      </nav>
-    </section>
+    <section id="index" data-position="current">
+        <section data-type="sidebar">
+            <header>
+                <menu type="toolbar">
+                    <a href="#">Done</a>
+                </menu>
+                <h1 data-l10n-id="toc">ToC</h1>
+            </header>
+            <nav>
+                <h2>Algebra</h2>
+                <ul>
+                    <li><a href="#algebra-basics">Basics</a>
+                    </li>
+                    <li><a href="#algebra-exponents">Laws of Exponents</a>
+                    </li>
+                    <li><a href="#algebra-quadratic">Quadratic Formula</a>
+                    </li>
+                    <li><a href="#algebra-polynomials">Polynomials</a>
+                    </li>
+                    <li><a href="#algebra-zero">Rules of Zero</a>
+                    </li>
+                </ul>
+                <h2>Trigonometry</h2>
+                <ul>
+                    <li><a href="#trigonometry-basics">Basics</a>
+                    </li>
+                    <li><a href="#trigonometry-addition">Addition Formulas</a>
+                    </li>
+                    <li><a href="#trigonometry-half">Half Angle</a>
+                    </li>
+                    <li><a href="#trigonometry-double">Double Angle</a>
+                    </li>
+                    <li><a href="#trigonometry-sines">Law of Sines</a>
+                    </li>
+                    <li><a href="#trigonometry-cosines">Law of Cosines</a>
+                    </li>
+                </ul>
+                <h2>Calculus</h2>
+                <ul>
+                    <li><a href="#calculus-derivatives">Derivatives</a>
+                    </li>
+                    <li><a href="#calculus-special-derivatives">Special Derivatives</a>
+                    </li>
+                    <li><a href="#calculus-integrals">Integrals</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
 
     <section id="drawer" role="region">
       <header class="fixed">
@@ -86,4 +102,5 @@
   </section> <!-- end index -->
 
 </body>
+
 </html>

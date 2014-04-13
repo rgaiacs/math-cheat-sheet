@@ -1,6 +1,12 @@
-# Commands
+## Variables
 
+## - COMMONJS     : implementation of CommonJS to use: slimerjs, phantomjs
+##                  or nodejs.
 COMMONJS = slimerjs
+## - TEXZILLAPATH : path to TeXZilla.js
+TEXZILLAPATH = .
+
+# Command Options
 XARGSOPTIONS = --no-run-if-empty
 
 # Files
@@ -34,17 +40,26 @@ PACKAGELIST = building-blocks \
 
 # main rules
 
+## Commands
+## - help         : print this message
 help:
 	@grep -e '^##' Makefile | sed 's/## //'
 
-## build    : build some files need for this webapp
+## - build        : build some files need for this webapp
 build: index.html $(ICONS)
 
-## package  : package the webapp
+## - beaufify     : beautify files
+beautify:
+	html-beautify -r template.html
+	css-beautify -r css/app.css
+	js-beautify -r js/app.js
+	js-beautify -r manifest.webapp
+
+## - package      : package the webapp
 package: build
 	zip -r math-cheat-sheet.zip ${PACKAGELIST}
 
-## cleanall : remove the files built previously
+## - cleanall     : remove the files built previously
 cleanall:
 	rm -f $(CHEATSHEETS)
 	rm -f index.html
@@ -63,7 +78,7 @@ template.sed: $(CHEATSHEETS)
 
 %.html: %.tex
 	xargs $(XARGSOPTIONS) -a $< -L1 \
-	    $(COMMONJS) TeXZilla.js parser > $@
+	    $(COMMONJS) $(TEXZILLAPATH)/TeXZilla.js parser > $@
 
 icons/%.png: icons/math-cheat-sheet.svg
 	convert -background none $< -resize $(subst icons/math-cheat-sheet-,,$(basename $@)) $@
