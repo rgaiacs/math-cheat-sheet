@@ -37,6 +37,7 @@ PACKAGELIST = manifest.webapp \
 	      css \
 	      icons \
 	      index.html \
+	      js \
 	      locales
 
 # main rules
@@ -53,6 +54,7 @@ build: index.html $(ICONS)
 beautify:
 	html-beautify -r template.html
 	css-beautify -r css/app.css
+	js-beautify -r js/app.js
 	js-beautify -r manifest.webapp
 
 ## - package      : package the webapp
