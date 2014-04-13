@@ -18,7 +18,9 @@ TEXFILES = algebra-basics.tex \
 	   trigonometry-double.tex \
 	   trigonometry-sines.tex \
 	   trigonometry-cosines.tex \
-	   calculus-derivatives.tex
+	   calculus-derivatives.tex \
+	   calculus-special-derivatives.tex \
+	   calculus-integrals.tex
 
 CHEATSHEETS = $(subst tex,html,$(TEXFILES))
 
