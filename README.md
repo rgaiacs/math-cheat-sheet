@@ -10,9 +10,9 @@ See [License](LICENSE).
 
 ### Included
 
-- [Gaia](https://github.com/mozilla-b2g/gaia/)
-  - Directory: `b2g-shared`
-  - License: Apache License, Version 2.0
+- [webL10n](https://github.com/fabi1cazenave/webL10n)
+  - Directory: `webL10n`
+  - License: BSD/MIT/WTFPL license
 - [Building Blocks](https://github.com/buildingfirefoxos/Building-Blocks)
   - Directory: `building-blocks`
   - License: Apache License, Version 2.0

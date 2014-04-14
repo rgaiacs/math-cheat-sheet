@@ -32,12 +32,12 @@ CHEATSHEETS = $(subst tex,html,$(TEXFILES))
 
 PACKAGELIST = manifest.webapp \
 	      LICENSE \
-	      b2g-shared \
 	      building-blocks \
 	      css \
 	      icons \
 	      index.html \
-	      locales
+	      locales \
+	      webL10n
 
 # main rules
 
