@@ -2,12 +2,12 @@
 
 ## - COMMONJS     : implementation of CommonJS to use: slimerjs, phantomjs
 ##                  or nodejs.
-COMMONJS = slimerjs
+COMMONJS ?= slimerjs
 ## - TEXZILLAPATH : path to TeXZilla.js
 TEXZILLAPATH = .
 
 # Command Options
-XARGSOPTIONS = --no-run-if-empty
+XARGSOPTIONS ?= --no-run-if-empty
 
 # Files
 
