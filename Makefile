@@ -54,6 +54,8 @@ beautify:
 	html-beautify -r template.html
 	css-beautify -r css/app.css
 	js-beautify -r manifest.webapp
+	js-beautify -r js/app.js
+	js-beautify -r js/setup.js
 
 ## - package      : package the webapp
 package: build
@@ -71,7 +73,7 @@ index.html: template.sed template.html
 	sed -f $^ > $@
 
 template.sed: $(CHEATSHEETS)
-	rm $@ && for i in $(CHEATSHEETS); \
+	rm -f $@ && for i in $(CHEATSHEETS); \
 	do \
 		echo -e /\id=\"$${i/.html/}\"/ {\\nr $${i}\\n} >> $@; \
 	done;
@@ -81,4 +83,4 @@ template.sed: $(CHEATSHEETS)
 	    $(COMMONJS) $(TEXZILLAPATH)/TeXZilla.js parser > $@
 
 icons/%.png: icons/math-cheat-sheet.svg
-	convert -background none $< -resize $(subst icons/math-cheat-sheet-,,$(basename $@)) $@
+	convert -density 512 -background none $< -resize $(subst icons/math-cheat-sheet-,,$(basename $@)) $@

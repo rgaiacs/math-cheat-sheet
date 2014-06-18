@@ -118,3 +118,11 @@ article h3 {
 article math {
     font-size: 1.6rem;
 }
+
+#toc {
+    height: calc(100% - 5rem);
+}
+
+#main {
+    height: calc(100% - 5rem);
+}
