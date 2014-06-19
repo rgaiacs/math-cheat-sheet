@@ -1,6 +1,13 @@
 #index {
     height: 100%;
 }
+.img {
+    text-align: center;
+}
+.illustration {
+    width: 25rem;
+}
+
 [data-position="right"] {
     position: absolute;
     top: 0;
