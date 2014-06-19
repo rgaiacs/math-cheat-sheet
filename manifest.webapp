@@ -1,4 +1,5 @@
 {
+    "version": "1.1.0",
     "name": "Math Cheat Sheet",
     "description": "Math Cheat Sheet using MathML",
     "type": "web",
