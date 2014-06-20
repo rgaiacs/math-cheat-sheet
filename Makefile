@@ -35,6 +35,7 @@ PACKAGELIST = manifest.webapp \
 	      building-blocks \
 	      css \
 	      icons \
+	      img \
 	      index.html \
 	      locales \
 	      webL10n
