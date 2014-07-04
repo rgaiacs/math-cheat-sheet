@@ -4,6 +4,9 @@
 #main {
     height: calc(100% - 5rem);
 }
+header h1 {
+    float: left;
+}
 article h2 {
     font-size: 2rem;
     font-weight: bold;
