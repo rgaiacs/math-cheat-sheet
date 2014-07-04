@@ -11,11 +11,11 @@
     "permissions": {},
     "locales": {
         "en-US": {
-            "name": "Math Cheat Sheet",
+            "name": "Math Sheet",
             "description": "Math Cheat Sheet using MathML"
         },
         "pt": {
-            "name": "Tabela de Equações Matemáticas",
+            "name": "Equações",
             "description": "Tabela de Equações Matemáticas utilizando MathML"
         }
     },
